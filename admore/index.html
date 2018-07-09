@@ -26,6 +26,26 @@
 
 </head>
 
+<style>
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+
+	::-webkit-scrollbar-track {
+		background-color: #F1F1F1;
+	}
+
+	/* Handle */
+
+	::-webkit-scrollbar-thumb {
+		background: #0C5EED;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+</style>
+
 <body>
 	<div class="form-container">
 		<div class="container">
@@ -96,7 +116,7 @@
 							<p>We are engaged in development in Blockchain, ICO and Web-segment. AdMore - a team of experienced developers, marketers
 								and managers with years of experience in IT. Our solutions will serve as a reliable support for Your business.
 							</p>
-							<a href="#" class="button-squared">Get free consultation</a>
+							<a href="#" id="get-consultation" class="button-squared">Get free consultation</a>
 						</div>
 						<div class="clients">
 							<p>Our satisfied clients:</p>
@@ -124,9 +144,15 @@
 						<h1>Our Services</h1>
 						<p>We master blockchain, ICO and web perfectly. Our services in the hands of experienced developers are essential and
 							indispensable tools to grow your business.</p>
-						<a href="#" class="button-squared white">
-							Download cases
-						</a>
+						<div class="super-button">
+							<a href="#" id="download-cases" class="button-squared white">
+								Download cases
+							</a>
+							<div class="hidden-part">
+								<input type="email" placeholder="email@admore.com">
+								<a href="#" class="button-squared">Send cases</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row services-container">
@@ -202,86 +228,274 @@
 							<div class="row">
 								<div class="col-md-4">
 									<ul class="blockchain-menu">
-										<li class="button-circled blockchain-control" data-name="smart-contract-development">
-											Smart contracts development
-										</li>
-										<li class="button-circled blockchain-control" data-name="cryptowallets-development">
-											Cryptowallets development
-										</li>
-										<li class="button-circled blockchain-control" data-name="project-tokenomics">
-											Project tokenomics
-										</li>
-										<li class="button-circled blockchain-control" data-name="token-emisions">
-											Token emisions
-										</li>
-										<li class="button-circled blockchain-control" data-name="security-audit">
-											Security audit
-										</li>
-										<li class="button-circled blockchain-control" data-name="legal-support">
-											Legal support
-										</li>
+										<div>
+											<li class="button-circled control blockchain" data-name="smart-contract-development">
+												Smart contracts development
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="cryptowallets-development">
+												Cryptowallets development
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="secured-web-development">
+												Secured web development
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="project-tokenomics">
+												Project tokenomics
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="token-emisions">
+												Token emisions
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="security-audit">
+												Security audit
+											</li>
+										</div>
+										<div>
+											<li class="button-circled blockchain control" data-name="legal-support">
+												Legal support
+											</li>
+										</div>
 									</ul>
 								</div>
 								<div class="col-md-8 d-none d-md-flex align-content-center blue-stuff">
-									<div class="popup-blockchain previous" data-name="smart-contract-development">
+									<div class="popup desktop blockchain visible smart-contract-development">
 										<ul class="popup-items">
-											<li>smart-contract-development</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
+											<li>
+												<div class="row">
+													<div class="col-md-8 offset-md-2">
+														<h3>Variable platforms
+														</h3>
+														<p>We develop smart contracts on various platforms.</p>
+														<div class="coins">
+															<div class="coin">
+																<div class="coin-image-wrap">
+																	<img src="img/blockchain/coins/eos.png" alt="">
+																</div>
+																<div class="text">EOS</div>
+															</div>
+															<div class="coin">
+																<div class="coin-image-wrap">
+																	<img src="img/blockchain/coins/your_coin.png" alt="">
+																</div>
+																<div class="text">Graphene</div>
+															</div>
+															<div class="coin">
+																<div class="coin-image-wrap">
+																	<img src="img/blockchain/coins/ethereum.png" alt="">
+																</div>
+																<div class="text">ethereum</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</li>
+											<li>Decentralized applications</li>
+											<li>Contracts for ICO and DAICO </li>
+											<li></li>
 										</ul>
 									</div>
-									<div class="popup-blockchain" data-name="cryptowallets-development">
+									<div class="popup desktop blockchain cryptowallets-development">
 										<ul class="popup-items">
-											<li>cryptowallets-development</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
+											<li>
+												<h3>Cryptowallet for your coin</h3>
+												<p>We develop create wallets for your own coin.</p>
+												<div class="coins">
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/your_coin.png" alt="">
+														</div>
+														<div class="text">Your coin</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<h3>Multicurrency cryptowallet </h3>
+												<p>We develop create multicurrency wallets.</p>
+												<div class="coins">
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/eos.png" alt="">
+
+														</div>
+														<div class="text">EOS</div>
+													</div>
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/bitcoin.png" alt="">
+														</div>
+														<div class="text">Bitcoin</div>
+													</div>
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/ethereum.png" alt="">
+														</div>
+														<div class="text">Ethereum</div>
+													</div>
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/litecoin.png" alt="">
+														</div>
+														<div class="text">Litecoin</div>
+													</div>
+													<div class="coin">
+														<div class="coin-image-wrap">
+															<img src="img/blockchain/coins/more.png" alt="">
+															<div class="text">And more</div>
+														</div>
+													</div>
+											</li>
 										</ul>
-									</div>
-									<div class="popup-blockchain" data-name="project-tokenomics">
-										<ul class="popup-items">
-											<li>project-tokenomics</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
-										</ul>
-									</div>
-									<div class="popup-blockchain" data-name="security-audit">
-										<ul class="popup-items">
-											<li>security-audit</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
-										</ul>
-									</div>
-									<div class="popup-blockchain" data-name="token-emisions">
-										<ul class="popup-items">
-											<li>token-emisions</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
-										</ul>
-									</div>
-									<div class="popup-blockchain" data-name="legal-support">
-										<ul class="popup-items">
-											<li>legal-support</li>
-											<li>Contextual advertising in search engines</li>
-											<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
-											<li>Collaboration with leading bloggers</li>
-											<li>Banner advertising on crypto resources</li>
-										</ul>
+										</div>
+										<div class="popup blockchain desktop secured-web-development">
+											<ul class="popup-items">
+												<li class="top">
+													<div class="row">
+														<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+															<h3>
+																Secured web development
+															</h3>
+															<p>
+																Complete solution for any of your tasks. We use all the advanced technologies.
+															</p>
+															<ul class="web-development-icons">
+																<li>
+																	<div class="web-development-icon-wrap">
+																		<img src="img/blockchain/logos/logo_html5.png" alt="">
+																	</div>
+																	<div class="text">HTML5</div>
+																</li>
+																<li>
+																	<div class="web-development-icon-wrap">
+																		<img src="img/blockchain/logos/logo_css.png" alt="">
+																	</div>
+																	<div class="text">CSS</div>
+																</li>
+																<li>
+																	<div class="web-development-icon-wrap">
+																		<img src="img/blockchain/logos/logo_js.png" alt="">
+																	</div>
+																	<div class="text">JS Frameworks</div>
+																</li>
+															</ul>
+															<ul class="web-development-icons">
+																<li>
+																	<div class="web-development-icon-wrap">
+																		<img src="img/blockchain/logos/logo_php.png" alt="">
+																	</div>
+																	<div class="text">PHP</div>
+																</li>
+																<li>
+																	<div class="web-development-icon-wrap">
+																		<img src="img/blockchain/logos/logo_node_js.png" alt="">
+																	</div>
+																	<div class="text">Node JS</div>
+																</li>
+															</ul>
+														</div>
+
+													</div>
+												</li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="popup desktop blockchain project-tokenomics">
+											<ul class="popup-items">
+												<li>Market research and analysis for the product
+												</li>
+												<li>Research and calculation of the project tokenomics</li>
+												<li>Integration of blocking technology into the project</li>
+												<li>Integration of blocking technology into the project</li>
+												<li>White Paper development</li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="popup desktop blockchain security-audit">
+											<ul class="popup-items">
+												<li>Audit of smart contracts</li>
+												<li>Audit of cryptowallets</li>
+												<li>Audit of the Investor's Cabinet</li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="popup desktop blockchain token-emisions">
+											<ul class="popup-items">
+												<li class="top">
+													<h3>Different types of tokens on the Ethereum platform</h3>
+													<ul class="token-types">
+														<li>- ERC-721</li>
+														<li>- ERC-827</li>
+														<li>- ERC-948</li>
+														<li>- ERC-884</li>
+														<li>- Waves</li>
+														<li>- Cardano</li>
+														<li>- NEM</li>
+													</ul>
+												</li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="popup desktop blockchain legal-support">
+											<ul class="popup-items">
+												<li>legal-support</li>
+												<li>Contextual advertising in search engines</li>
+												<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Banner advertising on crypto resources</li>
+												<li>legal-support</li>
+												<li>Contextual advertising in search engines</li>
+												<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Banner advertising on crypto resources</li>
+												<li>legal-support</li>
+												<li>Contextual advertising in search engines</li>
+												<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Banner advertising on crypto resources</li>
+												<li>legal-support</li>
+												<li>Contextual advertising in search engines</li>
+												<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Collaboration with leading bloggers</li>
+												<li>Banner advertising on crypto resources</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 		</section>
 		<section class="promotion">
 			<div class="container">
@@ -297,7 +511,7 @@
 					<div class="col-12">
 						<div class="row popup-and-controlls">
 							<div class="col-md-8 d-none d-md-block blue-stuff">
-								<div class="popup previous" data-name="project-promotion">
+								<div class="popup desktop promotion visible project-promotion">
 									<ul class="popup-items">
 										<li>project-promotion</li>
 										<li>Writing/publishing press releases for the media Content marketing</li>
@@ -306,11 +520,29 @@
 										<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
 										<li>Collaboration with leading bloggers</li>
 										<li>Listing your token on stock exchanges (40+)</li>
+										<li>Writing/publishing press releases for the media Content marketing</li>
+										<li>Contextual advertising in search engines</li>
+										<li>Banner advertising on crypto resources</li>
+										<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+										<li>Collaboration with leading bloggers</li>
+										<li>Listing your token on stock exchanges (40+)</li>
 									</ul>
 								</div>
-								<div class="popup" data-name="project-packaging">
+								<div class="popup desktop promotion project-packaging">
 									<ul class="popup-items">
 										<li>project-packaging</li>
+										<li>Writing/publishing press releases for the media Content marketing</li>
+										<li>Contextual advertising in search engines</li>
+										<li>Banner advertising on crypto resources</li>
+										<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+										<li>Collaboration with leading bloggers</li>
+										<li>Listing your token on stock exchanges (40+)</li>
+										<li>Writing/publishing press releases for the media Content marketing</li>
+										<li>Contextual advertising in search engines</li>
+										<li>Banner advertising on crypto resources</li>
+										<li>Advertising in social networks (Facebook, Twitter, LinkedIn)</li>
+										<li>Collaboration with leading bloggers</li>
+										<li>Listing your token on stock exchanges (40+)</li>
 										<li>Writing/publishing press releases for the media Content marketing</li>
 										<li>Contextual advertising in search engines</li>
 										<li>Banner advertising on crypto resources</li>
@@ -322,8 +554,12 @@
 							</div>
 							<div class="col-md-4">
 								<div class="controls">
-									<div class="button-circled left-arrow control" data-name="project-promotion">Project promotion</div>
-									<div class="button-circled left-arrow control" data-name="project-packaging">Project packaging</div>
+									<div>
+										<div class="button-circled left-arrow control promotion" data-name="project-promotion">Project promotion</div>
+									</div>
+									<div>
+										<div class="button-circled left-arrow control promotion" data-name="project-packaging">Project packaging</div>
+									</div>
 								</div>
 							</div>
 						</div>
