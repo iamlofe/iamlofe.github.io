@@ -47,41 +47,38 @@
 </style>
 
 <body>
-	<div class="form-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6  offset-lg-3 col-md-8  offset-md-2 d-flex" style="height: 100vh;">
-					<form>
-						<div id="close-button">
-							<i class="fa fa-times"></i>
-						</div>
-						<div class="logo text-center">
-							Ad
-							<span>More</span>
-						</div>
-						<div class="question">
-							How can We call You?
-						</div>
-						<input type="name" placeholder="Type your name">
-						<div class="question">
-							Enter your valid phone number
-						</div>
-						<input type="phone" placeholder="+XXX XX XXX-XX-XX">
-						<div class="question">
-							Type your email*
-						</div>
-						<input type="email" placeholder="admore@company.com">
-						<div class="question">
-							Type your Telegram nickname
-						</div>
-						<input type="text" placeholder="@admore">
-
-						<a href="#" class="button-squared">Get free consultation</a>
-
-					</form>
+	<div class="fixed-form clearfix">
+		<div class="col-lg-6  offset-lg-3 col-md-8  offset-md-2 form-container d-flex" style="height: 100vh;">
+			<form>
+				<div id="close-button">
+					<i class="fa fa-times"></i>
 				</div>
-			</div>
+				<div class="logo text-center">
+					Ad
+					<span>More</span>
+				</div>
+				<div class="question">
+					How can We call You?
+				</div>
+				<input type="name" placeholder="Type your name">
+				<div class="question">
+					Enter your valid phone number
+				</div>
+				<input type="phone" placeholder="+XXX XX XXX-XX-XX">
+				<div class="question">
+					Type your email*
+				</div>
+				<input type="email" placeholder="admore@company.com">
+				<div class="question">
+					Type your Telegram nickname
+				</div>
+				<input type="text" placeholder="@admore">
+
+				<a href="#" class="button-squared">Get free consultation</a>
+
+			</form>
 		</div>
+	</div>
 	</div>
 	<div class="blur">
 		<header>
@@ -94,8 +91,8 @@
 						</div>
 					</div>
 					<div class="col menu">
-						<a href="#">What we do</a>
-						<a href="#">Contacts</a>
+						<a class="learn-more" href="#services">What we do</a>
+						<a class="learn-more" href="#contacts">Contacts</a>
 					</div>
 					<div class="col d-flex justify-content-end">
 						<a href="#" id="contact-us-button" class="button-squared d-none d-md-block">Contact us</a>
@@ -116,7 +113,9 @@
 							<p>We are engaged in development in Blockchain, ICO and Web-segment. AdMore - a team of experienced developers, marketers
 								and managers with years of experience in IT. Our solutions will serve as a reliable support for Your business.
 							</p>
-							<a href="#" id="get-consultation" class="button-squared">Get free consultation</a>
+							<div class="d-flex">
+								<a href="#" id="get-consultation" class="button-squared">Get free consultation</a>
+							</div>
 						</div>
 						<div class="clients">
 							<p>Our satisfied clients:</p>
@@ -137,7 +136,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section id="services" class="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3 text-center">
@@ -515,7 +514,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -582,7 +581,7 @@
 							Ad
 							<span>More</span>
 						</div>
-						<a href="#" class="question d-none d-md-block">What we do</a>
+						<a href="#services" class="learn-more question d-none d-md-block">What we do</a>
 						<a href="#top" class="to-top d-md-none d-block">
 							<i class="fa fa-arrow-up"></i>
 						</a>
